@@ -10,19 +10,45 @@
     class="grid min-h-dvh grid-cols-[100px_repeat(auto-fit,minmax(100px,1fr))] grid-rows-[50px_1fr] [grid-template-areas:'header_header_header''sidebar_content_content''footer_footer_footer']"
   >
     <header class="bg-cyan-500 [grid-area:header] flex justify-between">
-      <div class="flex items-center">
-        <img src="" alt="Personaje" />
+      <div class="flex items-center gap-2 ml-8">
+        <img
+          src="./src/assets/imgs/ui/icon_character.webp"
+          alt="Personaje"
+          class="h-6"
+        />
         <p>Detalles de atributos</p>
       </div>
       <img src="" alt="X" />
     </header>
-    <aside class="bg-amber-500 [grid-area:sidebar] grid grid-rows-7">
-      <img src="" alt="Personaje" /><img src="" alt="Arma" /><img
-        src=""
-        alt="Ecos"
-      /><img src="" alt="Rastros" /><img src="" alt="Resonancias" /><img
-        src=""
+    <aside
+      class="bg-black [grid-area:sidebar] grid grid-rows-6 place-items-center"
+    >
+      <img
+        src="./src/assets/imgs/ui/icon_character.webp"
+        alt="character icon"
+        class="h-12 row-start-1 row-end-2"
+      />
+      <img
+        src="./src/assets/imgs/ui/icon_weapon.webp"
+        alt="icon_weapon"
+        class="h-12 row-start-2 row-end-3"
+      />
+      ><img
+        src="./src/assets/imgs/ui/icon_echoes.webp"
+        alt="Echoes"
+        class="h-12 row-start-3 row-end-4"
+      /><img
+        src="./src/assets/imgs/ui/icon_forte.webp"
+        alt="icon_forte"
+        class="h-12 row-start-4 row-end-5"
+      /><img
+        src="./src/assets/imgs/ui/icon_constellation.webp"
+        alt="Resonances"
+        class="h-12 row-start-5 row-end-6"
+      /><img
+        src="./src/assets/imgs/ui/icon_extra_info.webp"
         alt="Extra Info"
+        class="h-12 row-start-6 row-end-7"
       />
     </aside>
     <main
