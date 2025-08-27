@@ -1,5 +1,4 @@
 /*! tailwindcss v4.1.12 | MIT License | https://tailwindcss.com */
-@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -177,44 +176,14 @@
   .grid {
     display: grid;
   }
-  .table {
-    display: table;
-  }
   .h-full {
     height: 100%;
   }
   .min-h-dvh {
     min-height: 100dvh;
   }
-  .w-full {
-    width: 100%;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
-  }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-  .grid-cols-\[50px_repeat\(auto-fit\,minmax\(100px\,1fr\)\)\] {
-    grid-template-columns: 50px repeat(auto-fit,minmax(100px,1fr));
-  }
   .grid-cols-\[100px_repeat\(auto-fit\,minmax\(100px\,1fr\)\)\] {
     grid-template-columns: 100px repeat(auto-fit,minmax(100px,1fr));
-  }
-  .grid-cols-\[repeat\(auto-fit\,minmax\(100px\,1fr\)\)\] {
-    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
-  }
-  .grid-rows-2 {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
-  }
-  .grid-rows-6 {
-    grid-template-rows: repeat(6, minmax(0, 1fr));
   }
   .grid-rows-7 {
     grid-template-rows: repeat(7, minmax(0, 1fr));
@@ -222,27 +191,14 @@
   .grid-rows-\[50px_1fr\] {
     grid-template-rows: 50px 1fr;
   }
-  .grid-rows-\[50px_1fr_50px\] {
-    grid-template-rows: 50px 1fr 50px;
-  }
   .items-center {
     align-items: center;
   }
   .justify-between {
     justify-content: space-between;
   }
-  .gap-2 {
-    gap: calc(var(--spacing) * 2);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .bg-amber-500 {
     background-color: var(--color-amber-500);
-  }
-  .bg-blue-200 {
-    background-color: var(--color-blue-200);
   }
   .bg-cyan-500 {
     background-color: var(--color-cyan-500);
@@ -250,36 +206,8 @@
   .bg-gray-500 {
     background-color: var(--color-gray-500);
   }
-  .bg-green-200 {
-    background-color: var(--color-green-200);
-  }
-  .bg-purple-500 {
-    background-color: var(--color-purple-500);
-  }
   .bg-red-600 {
     background-color: var(--color-red-600);
-  }
-  .bg-violet-600 {
-    background-color: var(--color-violet-600);
-  }
-  .bg-yellow-200 {
-    background-color: var(--color-yellow-200);
-  }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
-  }
-  .p-4 {
-    padding: calc(var(--spacing) * 4);
-  }
-  .text-white {
-    color: var(--color-white);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .\[grid-area\:btn-character-cosmetics\] {
     grid-area: btn-character-cosmetics;
@@ -305,43 +233,16 @@
   .\[grid-area\:content\] {
     grid-area: content;
   }
-  .\[grid-area\:footer\] {
-    grid-area: footer;
-  }
   .\[grid-area\:header\] {
     grid-area: header;
   }
   .\[grid-area\:sidebar\] {
     grid-area: sidebar;
   }
-  .\[grid-template-areas\:\'\'\] {
-    grid-template-areas: '';
-  }
   .\[grid-template-areas\:\'character-stats_character-selected_\._\._characters-list\'\'character-stats_character-selected_\._\._characters-list\'\'\._character-selected_characters-\._\._list\'\'btn-level-up_character-selected_btn-character-cosmetics_btn-character-tutorial_btn-grid-characters-list\'\] {
     grid-template-areas: 'character-stats character-selected . . characters-list''character-stats character-selected . . characters-list''. character-selected characters-. . list''btn-level-up character-selected btn-character-cosmetics btn-character-tutorial btn-grid-characters-list';
   }
-  .\[grid-template-areas\:\'header_header_header\'\'sidebar_content_content\'\'\._footer_footer\'\] {
-    grid-template-areas: 'header header header''sidebar content content''. footer footer';
-  }
   .\[grid-template-areas\:\'header_header_header\'\'sidebar_content_content\'\] {
     grid-template-areas: 'header header header''sidebar content content';
-  }
-}
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@layer properties {
-  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
-    *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
-      --tw-outline-style: solid;
-    }
   }
 }
