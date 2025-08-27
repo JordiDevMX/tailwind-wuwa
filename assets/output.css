@@ -229,6 +229,12 @@
   .row-end-7 {
     grid-row-end: 7;
   }
+  .m-auto {
+    margin: auto;
+  }
+  .mr-4 {
+    margin-right: calc(var(--spacing) * 4);
+  }
   .mb-0 {
     margin-bottom: calc(var(--spacing) * 0);
   }
@@ -291,6 +297,12 @@
   }
   .border-collapse {
     border-collapse: collapse;
+  }
+  .cursor-alias {
+    cursor: alias;
+  }
+  .cursor-pointer {
+    cursor: pointer;
   }
   .resize {
     resize: both;
