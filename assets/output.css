@@ -1,4 +1,5 @@
 /*! tailwindcss v4.1.12 | MIT License | https://tailwindcss.com */
+@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -176,11 +177,20 @@
   .grid {
     display: grid;
   }
+  .table {
+    display: table;
+  }
   .h-full {
     height: 100%;
   }
   .min-h-dvh {
     min-height: 100dvh;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
   }
   .grid-cols-\[100px_repeat\(auto-fit\,minmax\(100px\,1fr\)\)\] {
     grid-template-columns: 100px repeat(auto-fit,minmax(100px,1fr));
@@ -197,6 +207,10 @@
   .justify-between {
     justify-content: space-between;
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .bg-amber-500 {
     background-color: var(--color-amber-500);
   }
@@ -208,6 +222,13 @@
   }
   .bg-red-600 {
     background-color: var(--color-red-600);
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .\[grid-area\:btn-character-cosmetics\] {
     grid-area: btn-character-cosmetics;
@@ -233,6 +254,9 @@
   .\[grid-area\:content\] {
     grid-area: content;
   }
+  .\[grid-area\:footer\] {
+    grid-area: footer;
+  }
   .\[grid-area\:header\] {
     grid-area: header;
   }
@@ -242,7 +266,28 @@
   .\[grid-template-areas\:\'character-stats_character-selected_\._\._characters-list\'\'character-stats_character-selected_\._\._characters-list\'\'\._character-selected_characters-\._\._list\'\'btn-level-up_character-selected_btn-character-cosmetics_btn-character-tutorial_btn-grid-characters-list\'\] {
     grid-template-areas: 'character-stats character-selected . . characters-list''character-stats character-selected . . characters-list''. character-selected characters-. . list''btn-level-up character-selected btn-character-cosmetics btn-character-tutorial btn-grid-characters-list';
   }
+  .\[grid-template-areas\:\'header_header_header\'\'sidebar_content_content\'\'footer_footer_footer\'\] {
+    grid-template-areas: 'header header header''sidebar content content''footer footer footer';
+  }
   .\[grid-template-areas\:\'header_header_header\'\'sidebar_content_content\'\] {
     grid-template-areas: 'header header header''sidebar content content';
+  }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
+      --tw-outline-style: solid;
+    }
   }
 }

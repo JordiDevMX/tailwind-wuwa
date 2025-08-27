@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/output.css" />
   </head>
   <body
-    class="grid min-h-dvh grid-cols-[100px_repeat(auto-fit,minmax(100px,1fr))] grid-rows-[50px_1fr] [grid-template-areas:'header_header_header''sidebar_content_content']"
+    class="grid min-h-dvh grid-cols-[100px_repeat(auto-fit,minmax(100px,1fr))] grid-rows-[50px_1fr] [grid-template-areas:'header_header_header''sidebar_content_content''footer_footer_footer']"
   >
     <header class="bg-cyan-500 [grid-area:header] flex justify-between">
       <div class="flex items-center">
@@ -25,10 +25,8 @@
         alt="Extra Info"
       />
     </aside>
-    <main
-      class="bg-red-600 [grid-area:content] grid [grid-template-areas:'character-stats_character-selected_._._characters-list''character-stats_character-selected_._._characters-list''._character-selected_characters-._._list''btn-level-up_character-selected_btn-character-cosmetics_btn-character-tutorial_btn-grid-characters-list']"
-    >
-      <section class="[grid-area:character-stats]">
+    <main class="bg-red-600 [grid-area:content]">
+      <section class="">
         <div>
           <img src="" alt="icono de fuego" />
           <p>Lupa</p>
@@ -94,10 +92,10 @@
           </div>
         </div>
       </section>
-      <div class="[grid-area:character-selected]">
+      <div class="">
         <img src="" alt="Lupa Grande" />
       </div>
-      <section class="[grid-area:characters-list]">
+      <section class="">
         <img src="" alt="Carlotta" /><img src="" alt="Lupa" /><img
           src=""
           alt="Changli"
@@ -106,18 +104,20 @@
           alt="Zani"
         /><img src="" alt="Shorekeeper" />
       </section>
-      <button class="[grid-area:btn-level-up]">Nivel Max. Alcanzado</button>
+    </main>
+    <footer class="[grid-area:footer]">
+      <button class="">Nivel Max. Alcanzado</button>
       <div class="flex">
-        <button class="[grid-area:btn-character-cosmetics]">
+        <button class="">
           <img src="" alt="Camisa" />
         </button>
-        <button class="[grid-area:btn-character-tutorial]">
+        <button class="">
           <img src="" alt="Tutorial" />
         </button>
-        <button class="[grid-area:btn-grid-characters-list]">
+        <button class="">
           <img src="" alt="Cuadritos" />
         </button>
       </div>
-    </main>
+    </footer>
   </body>
 </html>
