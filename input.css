@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* body {
+  grid-template-rows: 35px 1fr 50px;
+} */
+
+/* body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  min-height: 100dvh;
+  grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    ". footer footer";
+}
+
+header {
+  background-color: aqua;
+  grid-area: header;
+}
+
+aside {
+  background-color: orange;
+  grid-area: sidebar;
+}
+
+main {
+  background-color: red;
+  grid-area: content;
+}
+
+footer {
+  background-color: blueviolet;
+  grid-area: footer;
+} */
