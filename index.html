@@ -27,6 +27,7 @@
         />
       </button>
     </header>
+    <!-- RESONATOR MENU -->
     <aside class="[grid-area:sidebar] grid grid-rows-6 place-items-center">
       <img
         src="src/assets/imgs/ui/icon_character.webp"
@@ -59,7 +60,9 @@
     <main
       class="[grid-area:content] grid grid-cols-[1fr_2fr_100px] grid-rows-1"
     >
-      <section class="">
+      <!-- RESONATOR INFO/STATS CONTAINER-->
+      <section class="max-w-xs">
+        <!-- RESONATOR'S TYPE,t NAME & ELEMENT-->
         <div class="flex">
           <img
             src="src/assets/imgs/attributes/fusion_icon.webp"
@@ -71,6 +74,7 @@
             <p>Fusión</p>
           </div>
         </div>
+        <!-- DIAMOND ICONS -->
         <div class="flex gap-2">
           <img
             src="src/assets/imgs/attributes/icon_diamond.webp"
@@ -98,10 +102,13 @@
             class="h-6"
           />
         </div>
+        <!-- RESONATOR LEVEL -->
         <div>
           <p>Nv. 90/<span class="text-gray-400">90</span></p>
         </div>
+        <!-- LEVEL UP PROGRESS -->
         <hr class="border-4 rounded-lg text-amber-100 mb-4" />
+        <!-- RESONATOR STATS -->
         <div>
           <div
             class="flex justify-between bg-gray-400/15 w-full rounded-lg px-1"
@@ -178,9 +185,11 @@
             class="flex justify-between bg-gray-400/15 rounded-lg mt-4 w-full"
           >
             <span class="pl-1">Estilo de combate</span>
-            <span class="bg-white text-black rounded-full w-6 text-center"
-              >...</span
+            <button
+              class="bg-white text-black rounded-full w-6 text-center cursor-pointer"
             >
+              ...
+            </button>
           </div>
           <div class="flex gap-2">
             <img
@@ -203,9 +212,18 @@
           </div>
         </div>
       </section>
-      <div>
-        <img src="" alt="Lupa Grande" />
+      <!-- CHOSEN RESONATOR ON BIG PICTURE -->
+      <div class="relative h-full w-full overflow-hidden">
+        <img
+          src="src/assets/imgs/characters/main_lupa.webp"
+          alt=""
+          class="absolute h-fit w-fit object-cover object-center min-h-3/4"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent"
+        ></div>
       </div>
+      <!-- RESONATORS LIST -->
       <section class="grid gap-3 mt-16 mb-4">
         <div class="relative">
           <img
