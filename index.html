@@ -12,7 +12,7 @@
     <header class="[grid-area:header] flex justify-between items-center">
       <div class="flex items-center gap-2 ml-9">
         <img
-          src="./src/assets/imgs/ui/icon_character.webp"
+          src="src/assets/imgs/ui/icon_character.webp"
           alt="Personaje"
           class="h-6"
         />
@@ -21,7 +21,7 @@
 
       <button class="cursor-pointer mr-4">
         <img
-          src="./src/assets/imgs/ui/icon_close.webp"
+          src="src/assets/imgs/ui/icon_close.webp"
           alt="close button"
           class="h-6"
         />
@@ -29,29 +29,29 @@
     </header>
     <aside class="[grid-area:sidebar] grid grid-rows-6 place-items-center">
       <img
-        src="./src/assets/imgs/ui/icon_character.webp"
+        src="src/assets/imgs/ui/icon_character.webp"
         alt="character icon"
         class="h-12 row-start-1 row-end-2"
       />
       <img
-        src="./src/assets/imgs/ui/icon_weapon.webp"
+        src="src/assets/imgs/ui/icon_weapon.webp"
         alt="icon_weapon"
         class="h-12 row-start-2 row-end-3"
       />
       <img
-        src="./src/assets/imgs/ui/icon_echoes.webp"
+        src="src/assets/imgs/ui/icon_echoes.webp"
         alt="Echoes"
         class="h-12 row-start-3 row-end-4"
       /><img
-        src="./src/assets/imgs/ui/icon_forte.webp"
+        src="src/assets/imgs/ui/icon_forte.webp"
         alt="icon_forte"
         class="h-12 row-start-4 row-end-5"
       /><img
-        src="./src/assets/imgs/ui/icon_constellation.webp"
+        src="src/assets/imgs/ui/icon_constellation.webp"
         alt="Resonances"
         class="h-12 row-start-5 row-end-6"
       /><img
-        src="./src/assets/imgs/ui/icon_extra_info.webp"
+        src="src/assets/imgs/ui/icon_extra_info.webp"
         alt="Extra Info"
         class="h-12 row-start-6 row-end-7"
       />
@@ -62,72 +62,144 @@
       <section class="">
         <div class="flex">
           <img
-            src="./src/assets/imgs/attributes/fusion_icon.webp"
+            src="src/assets/imgs/attributes/fusion_icon.webp"
             alt="icono de fuego"
             class="h-14 bg-[#1E2332]"
           />
           <div class="">
-            <p>Lupa</p>
+            <p class="font-extrabold">Lupa</p>
             <p>Fusión</p>
           </div>
         </div>
-        <div class="flex">
-          <img src="" alt="rombo" /><img src="" alt="rombo" /><img
-            src=""
-            alt="rombo"
-          /><img src="" alt="rombo" /><img src="" alt="rombo" /><img
-            src=""
-            alt="rombo"
+        <div class="flex gap-2">
+          <img
+            src="src/assets/imgs/attributes/icon_diamond.webp"
+            alt="diamond"
+            class="h-6"
+          /><img
+            src="src/assets/imgs/attributes/icon_diamond.webp"
+            alt="diamond"
+            class="h-6"
+          /><img
+            src="src/assets/imgs/attributes/icon_diamond.webp"
+            alt="diamond"
+            class="h-6"
+          /><img
+            src="src/assets/imgs/attributes/icon_diamond.webp"
+            alt="diamond"
+            class="h-6"
+          /><img
+            src="src/assets/imgs/attributes/icon_diamond.webp"
+            alt="diamond"
+            class="h-6"
+          /><img
+            src="src/assets/imgs/attributes/icon_diamond.webp"
+            alt="diamond"
+            class="h-6"
           />
         </div>
         <div>
-          <p>Nv. 90/<span>90</span></p>
+          <p>Nv. 90/<span class="text-gray-400">90</span></p>
         </div>
-        <progress></progress>
+        <hr class="border-4 rounded-lg text-amber-100" />
         <div>
-          <div class="flex justify-between">
-            <div class="flex"><img src="" alt="corazon" /><span>PS</span></div>
+          <div
+            class="flex justify-between bg-gray-400/15 w-full rounded-lg px-1"
+          >
+            <div class="flex">
+              <img
+                src="src/assets/imgs/attributes/icon_attribute_health.webp"
+                alt="corazon"
+                class="h-4 self-center pr-1 pt-0.5"
+              /><span>PS</span>
+            </div>
             <span>16862</span>
           </div>
-          <div class="flex justify-between">
-            <div class="flex"><img src="" alt="Ataque" /><span>ATK</span></div>
+          <div class="flex justify-between w-full px-1">
+            <div class="flex">
+              <img
+                src="src/assets/imgs/attributes/icon_attribute_attack.webp"
+                alt="Ataque"
+                class="h-4 self-center pr-1 pt-0.5"
+              /><span>ATK</span>
+            </div>
             <span>2452</span>
           </div>
-          <div class="flex justify-between">
-            <div class="flex"><img src="" alt="Defensa" /><span>DEF</span></div>
+          <div
+            class="flex justify-between bg-gray-400/15 w-full rounded-lg px-1"
+          >
+            <div class="flex">
+              <img
+                src="src/assets/imgs/attributes/icon_attribute_defense.webp"
+                alt="Defensa"
+                class="h-4 self-center pr-1 pt-0.5"
+              /><span>DEF</span>
+            </div>
             <span>1245</span>
           </div>
-          <div class="flex justify-between">
+          <div class="flex justify-between w-full px-1">
             <div class="flex">
-              <img src="" alt="Regen. de energia" /><span
-                >Regen. de energia</span
-              >
+              <img
+                src="src/assets/imgs/attributes/icon_attribute_energy_regen.webp"
+                alt="Regen. de energia"
+                class="h-4 self-center pr-1 pt-0.5"
+              /><span>Regen. de energia</span>
             </div>
             <span>126.0%</span>
           </div>
-          <div class="flex justify-between">
+          <div
+            class="flex justify-between bg-gray-400/15 w-full rounded-lg px-1"
+          >
             <div class="flex">
-              <img src="" alt="Prob. CRIT" /><span>Prob. CRIT</span>
+              <img
+                src="src/assets/imgs/attributes/icon_attribute_crit_rate.webp"
+                alt="Prob. CRIT"
+                class="h-4 self-center pr-1 pt-0.5"
+              /><span>Prob. CRIT</span>
             </div>
             <span>68.6%</span>
           </div>
-          <div class="flex justify-between">
+          <div class="flex justify-between w-full px-1">
             <div class="flex">
-              <img src="" alt="Daño CRIT" /><span>Daño CRIT</span>
+              <img
+                src="src/assets/imgs/attributes/icon_attribute_crit_dmg.webp"
+                alt="Daño CRIT"
+                class="h-4 self-center pr-1 pt-0.5"
+              /><span>Daño CRIT</span>
             </div>
             <span>274.8%</span>
           </div>
-          <div class="flex items-center bg-gray-500 h-full">
-            <p>...</p>
+          <div class="grid place-items-center bg-gray-400/15 rounded-lg">
+            <span class="tracking-[0.3em] text-lg font-bold text-white"
+              >...</span
+            >
           </div>
-          <div class="flex justify-between">
-            <span>Estilo de combate</span> <span>...</span>
+          <div
+            class="flex justify-between bg-gray-400/15 rounded-lg mt-4 w-full"
+          >
+            <span class="pl-1">Estilo de combate</span>
+            <span class="bg-white text-black rounded-full w-6 text-center"
+              >...</span
+            >
           </div>
-          <div class="flex">
-            <img src="" alt="1" /><img src="" alt="2" /><img
-              src=""
-              alt="3"
-            /><img src="" alt="4" />
+          <div class="flex gap-2">
+            <img
+              src="src/assets/imgs/combat_styles/icon_concerto_efficiency.webp"
+              alt="icon_concerto_efficiency"
+              class="h-8"
+            /><img
+              src="src/assets/imgs/combat_styles/icon_resonance_liberation_dmg.webp"
+              alt="icon_resonance_liberation_dmg"
+              class="h-8"
+            /><img
+              src="src/assets/imgs/combat_styles/icon_fusion_dmg_amplification.webp"
+              alt="icon_fusion_dmg_amplification"
+              class="h-8"
+            /><img
+              src="src/assets/imgs/combat_styles/icon_basic_attact_dmg_amplification.webp"
+              alt="icon_basic_attact_dmg_amplification"
+              class="h-8"
+            />
           </div>
         </div>
       </section>
