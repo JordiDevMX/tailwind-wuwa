@@ -7,11 +7,9 @@
     <link rel="stylesheet" href="assets/output.css" />
   </head>
   <body
-    class="grid min-h-dvh grid-cols-[100px_repeat(auto-fit,minmax(100px,1fr))] grid-rows-[50px_1fr] [grid-template-areas:'header_header_header''sidebar_content_content''footer_footer_footer']"
+    class="grid min-h-dvh grid-cols-[100px_repeat(auto-fit,minmax(100px,1fr))] grid-rows-[50px_1fr] [grid-template-areas:'header_header_header''sidebar_content_content''footer_footer_footer'] bg-gray-800 text-white"
   >
-    <header
-      class="bg-cyan-500 [grid-area:header] flex justify-between items-center"
-    >
+    <header class="[grid-area:header] flex justify-between items-center">
       <div class="flex items-center gap-2 ml-9">
         <img
           src="./src/assets/imgs/ui/icon_character.webp"
@@ -29,9 +27,7 @@
         />
       </button>
     </header>
-    <aside
-      class="bg-black [grid-area:sidebar] grid grid-rows-6 place-items-center"
-    >
+    <aside class="[grid-area:sidebar] grid grid-rows-6 place-items-center">
       <img
         src="./src/assets/imgs/ui/icon_character.webp"
         alt="character icon"
