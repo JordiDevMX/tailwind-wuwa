@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/output.css" />
   </head>
   <body
-    class="grid min-h-dvh grid-cols-[100px_repeat(auto-fit,minmax(100px,1fr))] grid-rows-[50px_1fr] [grid-template-areas:'header_header_header''sidebar_content_content''footer_footer_footer'] bg-gray-800 text-white"
+    class="grid min-h-dvh grid-cols-[100px_repeat(auto-fit,minmax(100px,1fr))] grid-rows-[100px_1fr_100px] [grid-template-areas:'header_header_header''sidebar_content_content''footer_footer_footer'] bg-gray-800 text-white"
   >
     <header class="[grid-area:header] flex justify-between items-center">
       <div class="flex items-center gap-2 ml-9">
@@ -101,7 +101,7 @@
         <div>
           <p>Nv. 90/<span class="text-gray-400">90</span></p>
         </div>
-        <hr class="border-4 rounded-lg text-amber-100" />
+        <hr class="border-4 rounded-lg text-amber-100 mb-4" />
         <div>
           <div
             class="flex justify-between bg-gray-400/15 w-full rounded-lg px-1"
@@ -203,30 +203,68 @@
           </div>
         </div>
       </section>
-      <div class="">
+      <div>
         <img src="" alt="Lupa Grande" />
       </div>
-      <section class="">
-        <img src="" alt="Carlotta" /><img src="" alt="Lupa" /><img
-          src=""
+      <section class="grid gap-3 mt-16">
+        <img
+          src="src/assets/imgs/characters/resonator_carlotta.webp"
+          alt="Carlotta"
+          class="h-16 rounded-full border-b-2 border-r-2 border-amber-400"
+        /><img
+          src="src/assets/imgs/characters/resonator_lupa.webp"
+          alt="Lupa"
+          class="h-16 rounded-full border-b-2 border-r-2 border-amber-400"
+        /><img
+          src="src/assets/imgs/characters/resonator_changli.webp"
           alt="Changli"
-        /><img src="" alt="Poronga" /><img src="" alt="Cartulina" /><img
-          src=""
+          class="h-16 rounded-full border-b-2 border-r-2 border-amber-400"
+        /><img
+          src="src/assets/imgs/characters/resonator_phrolova.webp"
+          alt="Poronga"
+          class="h-16 rounded-full border-b-2 border-r-2 border-amber-400"
+        /><img
+          src="src/assets/imgs/characters/resonator_cartethyia.webp"
+          alt="Cartulina"
+          class="h-16 rounded-full border-b-2 border-r-2 border-amber-400"
+        /><img
+          src="src/assets/imgs/characters/resonator_zani.webp"
           alt="Zani"
-        /><img src="" alt="Shorekeeper" />
+          class="h-16 rounded-full border-b-2 border-r-2 border-amber-400"
+        /><img
+          src="src/assets/imgs/characters/resonator_shorekeeper.webp"
+          alt="Shorekeeper"
+          class="h-16 rounded-full border-b-2 border-r-2 border-amber-400"
+        />
       </section>
     </main>
     <footer class="[grid-area:footer] flex justify-between">
-      <button class="col-start-2 col-end-3 ml-28">Nivel Max. Alcanzado</button>
-      <div class="flex">
-        <button class="">
-          <img src="" alt="Camisa" />
+      <button
+        class="col-start-2 col-end-3 ml-28 bg-white/45 text-black rounded-xs w-auto h-10 px-12 cursor-pointer"
+      >
+        Nivel max. alcanzado
+      </button>
+      <div class="flex gap-4 justify-center items-start mr-14">
+        <button class="cursor-pointer">
+          <img
+            src="src/assets/imgs/ui/icon_cosmetics.webp"
+            alt="character cosmetics"
+            class="h-12"
+          />
         </button>
-        <button class="">
-          <img src="" alt="Tutorial" />
+        <button class="cursor-pointer">
+          <img
+            src="src/assets/imgs/ui/btn_tutorial.webp"
+            alt="Tutorial"
+            class="h-12"
+          />
         </button>
-        <button class="">
-          <img src="" alt="Cuadritos" />
+        <button class="cursor-pointer">
+          <img
+            src="src/assets/imgs/ui/btn_grid_characters.webp"
+            alt="Cuadritos"
+            class="h-12"
+          />
         </button>
       </div>
     </footer>
